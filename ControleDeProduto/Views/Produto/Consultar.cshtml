@@ -1,0 +1,68 @@
+﻿@{
+    ViewData["Title"] = "Consultar Produto";
+}
+
+<div class="text-center">
+    <h2 class="display-4">Listagem de estoque de Produto</h2>
+</div>
+
+<br/>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nome do Produto</th>
+      <th scope="col">Descrição do produto</th>
+      <th scope="col">Preço do Produto</th>
+      <th scope="col">Quantidade do Produto</th>
+      <th scope="col">Total</th>
+      <th scope="col"></th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Caneta</td>
+      <td>Caneta preta bic para escrever</td>
+      <td>3.56</td>
+      <td>3</td>
+      <td>10.68</td>
+      <td>
+          <a role="button" asp-controller="Produto" asp-action="Editar" class="btn btn-primary">Editar</a>
+      </td>
+      <td>
+          <a role="button" asp-controller="Produto" asp-action="ApagarConfirmacao" class="btn btn-danger">Apagar</a>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Computador</td>
+      <td>Compuatdor DELL i7, core, 15 polegadas</td>
+      <td>2300.0</td>
+      <td>5</td>
+      <td>11500.0</td>
+       <td>
+          <a role="button" asp-controller="Produto" asp-action="Editar" class="btn btn-primary">Editar</a>
+      </td>
+      <td>
+          <a role="button" asp-controller="Produto" asp-action="ApagarConfirmacao" class="btn btn-danger">Apagar</a>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Garrafa</td>
+      <td>Garrafa de plastico, conservando agua gelada ou liquido gelado</td>
+      <td>67.09</td>
+      <td>6</td>
+      <td>402,54</td>
+       <td>
+          <a role="button" asp-controller="Produto" asp-action="Editar" class="btn btn-primary">Editar</a>
+      </td>
+      <td>
+          <a role="button" asp-controller="Produto" asp-action="ApagarConfirmacao" class="btn btn-danger">Apagar</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
